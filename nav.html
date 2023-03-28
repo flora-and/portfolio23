@@ -1,0 +1,52 @@
+<!-----js---->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+
+    $(function() {
+        
+    //about button
+
+        $("#m").click(function(){
+        if($("#m").text() == "About↗"){
+            $(this).text("Close↙");
+            $("#title").hide();
+        } else {
+            $(this).text("About↗");
+            $("#title").show();
+        }
+        $(".wrapd").fadeToggle("fast", "linear");
+        }); 
+        
+    });
+    
+    
+</script>
+
+<!-----menu wrapper  ------>
+    
+    <div class="wrapm">
+        <div class="inner" id="e"><h1><a href="index.html">Index&#x2197;&#xFE0E;</a></h1></div>
+        <div class="inner"><button id="m">About&#x2197;</button></div>
+        <div class="inner"><h1><a href="mailto:floraaa.ngo@gmail.com">Email&#x2197;&#xFE0E;</a></h1></div>
+        
+    </div> 
+
+<!-----about wrapper------>
+
+<div class="wrapd">
+    <div class="row" style="align-items: center;height: 100vh;">
+        <div class="column"></div>
+        <div class="column" id="descrip">
+            <h2>
+            Digital designer based in Melbourne, Australia. Focuses on web design but also dabbles in UI/UX, print and visual identities. Holds a Bachelor of Design (Digital Media) from RMIT. <br><br>Currently freelancing. Also volunteering with <a href="http://www.ondru.org/" target="_blank">ONDRU&#x2197;&#xFE0E;</a> as a graphic designer. Spends free time going for walks, cross stitching, and tending to houseplants. <br><br>Write to me at floraaa.ngo@gmail.com.<br><br><a href="https://www.instagram.com/flora__and/" target="_blank">Instagram&#x2197;&#xFE0E;</a><br><a href="https://www.linkedin.com/in/flora-ngo/" target="_blank">LinkedIn&#x2197;&#xFE0E;</a>
+            </h2><br><br>
+            
+            <p class="cap">&copy; Website designed and coded by flora&#38;</p>
+        </div>
+       <div class="column"></div>
+    </div>
+</div>
+
+
+
